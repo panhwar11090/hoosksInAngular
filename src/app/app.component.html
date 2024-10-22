@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
   <h1> angular hooks practice</h1>
   <div>
     <button (click)="increament()">Increament</button>
@@ -10,7 +10,18 @@
     </app-demo>
 
   </div>
-</div>
+</div> -->
 <!-- <app-demo2>
   <p #projectedContent>This is projected content!</p>
 </app-demo2> -->
+
+
+<!-- this material is for demo3 -->
+
+<div>
+  <input type="text" #inputEl (focus)="0">
+  <button (click)="onSbtClicked(inputEl)">Submit</button>
+  <app-demo3 [message]="inputVal" *ngIf="!toDestroy"></app-demo3>
+
+  <button (click)="DestroyComponent ()">Show/Hide</button>
+</div>
